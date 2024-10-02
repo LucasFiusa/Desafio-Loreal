@@ -32,11 +32,12 @@ body {
 #home {
   width: 100%;
   height: 320px;
-  margin-bottom: 150px;
+  height: 600px;
 }
 
 #home_img {
   width: 100%;
+  height: 90%;
 }
 
 #about {
@@ -114,6 +115,7 @@ body {
   }
   #home {
     margin: 0;
+    height: auto;
   }
   #content_img {
     width: 90%;
@@ -135,6 +137,15 @@ body {
     flex-wrap: wrap;
   }
   #container_images img {
-    width: 40%;
+    width: 15%;
+  }
+}
+@media (max-width: 600px) {
+  #container_images {
+    width: 80%;
+    gap: 40px;
+  }
+  #container_images img {
+    width: calc(50% - 40px);
   }
 }/*# sourceMappingURL=style.css.map */
