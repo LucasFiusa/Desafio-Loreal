@@ -33,8 +33,6 @@ body{
 
 #home{
     width: 100%;
-    height: 320px;
-    height: 600px;
 }
 
 #home_img{
@@ -56,7 +54,6 @@ body{
 
 #content_img img{
     width: 100%;
-    height: 100%;
     border-radius: 20px;
     box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.1);
 }
@@ -137,11 +134,8 @@ body{
     }
     #container_images{
         width: 90%;
-        flex-wrap: wrap;
-
-        img{
-            width: calc(25% - 10%);
-        }
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -149,8 +143,5 @@ body{
     #container_images{
         width: 80%;
         gap: 40px;
-    }
-    #container_images img{
-        width: calc(50% - 40px);
     }
 }
